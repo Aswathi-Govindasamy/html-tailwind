@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="relative">
+    <div
+      class="bg-white z-50 fixed top-0 left-0 w-full flex flex-wrap justify-between items-center px-6 py-4"
+    >
+      <!-- Hidden Checkbox Toggle -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+      <!-- Logo -->
+      <img
+        class="ml-5 h-16 w-auto cursor-pointer"
+        src="images/Askmeidentity 2.png"
+      />
+
+      <!-- Hamburger Icon -->
+      <label
+        for="menu-toggle"
+        class="ml-auto md:hidden flex flex-col justify-between w-6 h-5 cursor-pointer"
+      >
+        <span class="block h-1 bg-black rounded"></span>
+        <span class="block h-1 bg-black rounded"></span>
+        <span class="block h-1 bg-black rounded"></span>
+      </label>
+
+      <!-- Nav Links -->
+      <div
+        class="w-full md:w-auto grid grid-row-4 md:grid-cols-4 gap-4 text-sm font-bold mt-4 md:mt-0 hidden peer-checked:grid md:grid"
+      >
+        <a class="font-mono cursor-pointer hover:opacity-80" href="#">Home</a>
+        <a class="font-mono cursor-pointer hover:opacity-80" href="#">About</a>
+        <a class="font-mono cursor-pointer hover:opacity-80" href="#"
+          >Courses</a
+        >
+        <a class="font-mono cursor-pointer hover:opacity-80" href="#"
+          >Contact</a
+        >
+      </div>
+
+      <!-- Icons (only on md+) -->
+      <div class="hidden md:grid grid-cols-3 gap-x-8 mt-4 md:mt-0">
+        <img class="cursor-pointer w-6" src="images/cart.png" />
+        <img class="cursor-pointer w-6" src="images/user-img.png" />
+        <img class="cursor-pointer w-6" src="images/search.png" />
+      </div>
+
+      <!-- Login & Signup -->
+      <div
+        class="w-full md:w-auto grid grid-cols-2 items-center gap-4 mt-4 md:mt-0 hidden peer-checked:grid md:grid mr-5"
+      >
+        <a class="hover:underline text-blue-800 font-semibold" href="#"
+          >Login</a
+        >
+        <a
+          class="bg-gradient-to-r from-blue-800 to-purple-500 text-white px-6 py-2 rounded-lg font-semibold text-center"
+          href="#"
+          >Signup</a
+        >
+      </div>
+    </div>
+    <section
+      class="relative w-full bg-gradient-to-t from-[#4A16BD] via-[#070270] to-[#4A16BD] text-white px-6 py-16 overflow-hidden"
+    >
+      <main class="pt-20">
+        <!-- Decorative Background Blurs -->
+        <div class="absolute inset-0">
+          <div
+            class="absolute -bottom-10 left-10 w-[400px] h-[400px] bg-white/10 rounded-full blur-3xl opacity-30"
+          ></div>
+          <div
+            class="absolute -top-10 right-10 w-[300px] h-[300px] bg-purple-500/20 rounded-full blur-2xl opacity-30"
+          ></div>
+        </div>
+
+        <div
+          class="relative grid md:grid-cols-2 items-center justify-center gap-10 z-10"
+        >
+          <!-- Left Section -->
+          <div class="flex flex-col justify-center gap-10 max-w-xl px-4 ml-20">
+            <div>
+              <p class="uppercase text-xs tracking-wider mb-3">
+                Successful coaches are visionaries
+              </p>
+              <h1 class="text-4xl md:text-5xl font-extrabold leading-snug">
+                Good <span class="text-[#0E38CD]">coaching</span> is <br />
+                good teaching & <br />
+                nothing else.
+              </h1>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="border-white border-2 px-5 py-3 rounded-md font-semibold"
+              >
+                View Courses
+              </button>
+              <a href="#" class="font-semibold self-center"
+                >Get Free Consultation</a
+              >
+            </div>
+
+            <!-- Search Bar + Decorative Shape -->
+            <div class="relative w-full max-w-[340px]">
+              <div
+                class="relative bg-white rounded-lg py-2 px-3 flex justify-between items-center gap-2 shadow-md z-10"
+              >
+                <p
+                  class="text-[#3C3A58] font-semibold text-sm whitespace-nowrap"
+                >
+                  What do you want to learn today?
+                </p>
+                <button
+                  class="bg-gradient-to-r from-blue-800 to-purple-500 text-white px-4 py-2 rounded-lg font-semibold text-sm whitespace-nowrap"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div
+            class="relative flex justify-center md:justify-end px-4 mr-20 z-10"
+          >
+            <!-- Radial Background -->
+            <div
+              class="absolute top-0 right-0 w-[420px] h-[420px] rounded-full bg-[radial-gradient(circle_at_center,white_10%,#04016C)] blur-2xl opacity-70 z-0"
+            ></div>
+
+            <!-- Image -->
+            <img
+              src="images/brunette-woman-hugging-laptop 1.png"
+              alt="Smiling woman"
+              class="relative z-10 max-h-[400px] w-auto object-contain drop-shadow-xl"
+            />
+
+            <!-- Testimonial Box Positioned Right -->
+            <div
+              class="absolute top-10 right-[80%] transform translate-x-8 bg-white/10 backdrop-blur-md rounded-lg p-4 w-[260px] text-sm md:text-base z-20 shadow-lg"
+            >
+              <div class="text-blue-400 text-2xl font-bold">❝</div>
+              <strong class="block mb-1">Shyam</strong>
+              <p class="leading-snug text-white/90 text-sm">
+                In a coaching role, you ask the questions and rely more on your
+                staff, who become the experts, to provide the information.
+              </p>
+              <p class="text-blue-300 font-semibold mt-2">4.9</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <div class="bg-gradient-to-t from-[#7E08C7] to-[#2E08C7] py-8 px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center"
+      >
+        <img class="h-6 w-auto" src="images/spotify.png" alt="Spotify" />
+        <img class="h-6 w-auto" src="images/amazon.png" alt="Amazon" />
+        <img class="h-6 w-auto" src="images/spotify.png" alt="Spotify" />
+        <img class="h-6 w-auto" src="images/cisco.png" alt="Cisco" />
+        <img class="h-6 w-auto" src="images/logitech.png" alt="Logitech" />
+        <img class="h-6 w-auto" src="images/amazon.png" alt="Amazon" />
+      </div>
+    </div>
+
+    <section class="bg-[#eaf3fe] py-10">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold">
+          Featured <span class="text-blue-600">Course</span>
+        </h2>
+        <p class="text-gray-500 mt-2">
+          THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART
+        </p>
+      </div>
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 md:px-6 lg:px-8"
+      >
+        <!-- Card Start -->
+        <div class="rounded-xl shadow-md overflow-hidden bg-white">
+          <img
+            src="images/img-1.png"
+            alt="Course Image"
+            class="w-full h-40 object-cover rounded-t-xl"
+          />
+          <div class="p-4 bg-white">
+            <div class="flex justify-between text-sm text-gray-500 mb-1">
+              <span>1,057 Students</span>
+              <span>01h 59m</span>
+            </div>
+            <h3 class="text-base font-semibold text-gray-800 leading-snug">
+              Motion Graphics: Create a Nice Typography Animation
+            </h3>
+            <div class="flex justify-between items-center mt-3">
+              <span class="text-blue-600 font-bold">Rs.499</span>
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat Cards -->
+        <div class="rounded-xl shadow-md overflow-hidden bg-white">
+          <img
+            src="images/img-2.png"
+            alt="Course Image"
+            class="w-full h-40 object-cover rounded-t-xl"
+          />
+          <div class="p-4 bg-white">
+            <div class="flex justify-between text-sm text-gray-500 mb-1">
+              <span>1,057 Students</span>
+              <span>01h 59m</span>
+            </div>
+            <h3 class="text-base font-semibold text-gray-800 leading-snug">
+              Motion Graphics: Create a Nice Typography Animation
+            </h3>
+            <div class="flex justify-between items-center mt-3">
+              <span class="text-blue-600 font-bold">Rs.499</span>
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl shadow-md overflow-hidden bg-white">
+          <img
+            src="images/img-3.png"
+            alt="Course Image"
+            class="w-full h-40 object-cover rounded-t-xl"
+          />
+          <div class="p-4 bg-white">
+            <div class="flex justify-between text-sm text-gray-500 mb-1">
+              <span>1,057 Students</span>
+              <span>01h 59m</span>
+            </div>
+            <h3 class="text-base font-semibold text-gray-800 leading-snug">
+              Motion Graphics: Create a Nice Typography Animation
+            </h3>
+            <div class="flex justify-between items-center mt-3">
+              <span class="text-blue-600 font-bold">Rs.499</span>
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl shadow-md overflow-hidden bg-white">
+          <img
+            src="images/img-4.png"
+            alt="Course Image"
+            class="w-full h-40 object-cover rounded-t-xl"
+          />
+          <div class="p-4 bg-white">
+            <div class="flex justify-between text-sm text-gray-500 mb-1">
+              <span>1,057 Students</span>
+              <span>01h 59m</span>
+            </div>
+            <h3 class="text-base font-semibold text-gray-800 leading-snug">
+              Motion Graphics: Create a Nice Typography Animation
+            </h3>
+            <div class="flex justify-between items-center mt-3">
+              <span class="text-blue-600 font-bold">Rs.499</span>
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl shadow-md overflow-hidden bg-white">
+          <img
+            src="images/img-5.png"
+            alt="Course Image"
+            class="w-full h-40 object-cover rounded-t-xl"
+          />
+          <div class="p-4 bg-white">
+            <div class="flex justify-between text-sm text-gray-500 mb-1">
+              <span>1,057 Students</span>
+              <span>01h 59m</span>
+            </div>
+            <h3 class="text-base font-semibold text-gray-800 leading-snug">
+              Motion Graphics: Create a Nice Typography Animation
+            </h3>
+            <div class="flex justify-between items-center mt-3">
+              <span class="text-blue-600 font-bold">Rs.499</span>
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl shadow-md overflow-hidden bg-white">
+          <img
+            src="images/img-6.png"
+            alt="Course Image"
+            class="w-full h-40 object-cover rounded-t-xl"
+          />
+          <div class="p-4 bg-white">
+            <div class="flex justify-between text-sm text-gray-500 mb-1">
+              <span>1,057 Students</span>
+              <span>01h 59m</span>
+            </div>
+            <h3 class="text-base font-semibold text-gray-800 leading-snug">
+              Motion Graphics: Create a Nice Typography Animation
+            </h3>
+            <div class="flex justify-between items-center mt-3">
+              <span class="text-blue-600 font-bold">Rs.499</span>
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-10 flex flex-col md:flex md:flex-row justify-center items-center mb-20"
+      >
+        <a
+          class="bg-gradient-to-r from-blue-800 to-purple-500 text-white py-3 px-6 rounded-md font-semibold"
+          href="#"
+          >Explore courses</a
+        >
+      </div>
+    </section>
+    <!-- why learn with our courses-->
+    <div class="bg-gradient-to-r from-[#739FE8] to-[#4F18CA]">
+      <div class="flex flex-col items-center">
+        <h3
+          class="mt-20 text-white text-3xl font-bold tracking-wider leading-6"
+        >
+          Why <span class="text-[#0E38CD]">learn</span> with our courses?
+        </h3>
+        <p
+          class="text-white font-semibold text-xl tracking-wider leading-6 mt-6"
+        >
+          We are providing the best courses and top classes.And<br />
+        </p>
+        <p class="text-white font-semibold text-xl tracking-wider leading-6">
+          extraordinary placement training...
+        </p>
+      </div>
+      <div
+        class="grid xs:grid-row-1 sm:grid sm:grid-cols-3 justify-evenly mt-20 items-center"
+      >
+        <div class="flex flex-col justify-center items-center mb-20">
+          <img class="h-12" src="images\Icon (3).png" />
+          <h6 class="text-white text-xl font-semibold">01.Learn</h6>
+          <p class="text-white font-semibold text-center">
+            Learn continually. There is always <br />“one more thing”to learn.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center mb-20">
+          <img class="h-12" src="images\Icon (4).png" />
+          <h6 class="text-white text-2xl font-semibold">02. Graduate</h6>
+          <p class="text-white font-semibold text-center">
+            Be bold,be courageous,<br />
+            be your best.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center mb-20">
+          <img class="h-12" src="images\Icon (5).png" />
+          <h6 class="text-white text-2xl font-semibold">03. Work</h6>
+          <p class="text-white font-semibold text-center">
+            Great companies are built in<br />the office,with hard work put<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-r from-[#D9ECFF] to-[#D9ECFF] pt-4">
+      <div class="flex flex-col items-center">
+        <h6 class="text-[#323232] text-2xl font-bold tracking-wider pt-5">
+          Top <span class="text-[#0E38CD]">Categories</span>
+        </h6>
+        <p class="text-[#4E596B] font-semibold tracking-wider pt-3">
+          100+ unique online course list designs
+        </p>
+      </div>
+      <div
+        class="grid sm:grid sm:grid-cols-3 md:grid md:grid-cols-6 gap-8 px-20 pt-8"
+      >
+        <div
+          class="bg-white grid grid-row-4 items-center justify-center p-2 rounded-xl gap-5"
+        >
+          <img
+            class="w-16 h-16 object-contain pt-4"
+            src="images\div.features-box-image.png"
+          />
+          <h6 class="text-md text-[#324361] font-bold">
+            Digital<br />
+            Marketing
+          </h6>
+          <p class="pb-4 text-[#4F547B] font-semibold">25 courses</p>
+        </div>
+        <div
+          class="bg-white grid grid-row-3 items-center justify-center p-2 rounded-lg gap-5"
+        >
+          <img
+            class="w-16 h-16 object-contain pt-4"
+            src="images\div.features-box-image (1).png"
+          />
+          <h6 class="text-md text-[#324361] font-bold">Web<br />Development</h6>
+          <p class="pb-4 text-[#4F547B] font-semibold">16 courses</p>
+        </div>
+        <div
+          class="bg-white grid grid-row-3 items-center justify-center p-2 rounded-lg gap-5"
+        >
+          <img
+            class="w-16 h-16 object-contain pt-4"
+            src="images\div.features-box-image (2).png"
+          />
+          <h6 class="text-md text-[#324361] font-bold">
+            Art &<br />Humanities
+          </h6>
+          <p class="pb-4 text-[#4F547B] font-semibold">22 courses</p>
+        </div>
+        <div
+          class="bg-white grid grid-row-3 items-center justify-center p-2 rounded-lg gap-5"
+        >
+          <img
+            class="w-16 h-16 object-contain pt-4"
+            src="images\div.features-box-image (3).png"
+          />
+          <h6 class="text-md text-[#324361] font-bold">
+            Personal<br />Development
+          </h6>
+          <p class="pb-4 text-[#4F547B] font-semibold">22 courses</p>
+        </div>
+        <div
+          class="bg-white grid grid-row-3 items-center justify-center p-2 rounded-lg gap-5"
+        >
+          <img
+            class="w-16 h-16 object-contain pt-4"
+            src="images\div.features-box-image (4).png"
+          />
+          <h6 class="text-md text-[#324361] font-bold">IT and<br />Software</h6>
+          <p class="pb-4 text-[#4F547B] font-semibold">110 courses</p>
+        </div>
+        <div
+          class="bg-white grid grid-row-3 items-center justify-center p-2 rounded-lg gap-5"
+        >
+          <img
+            class="w-16 h-16 object-contain pt-4"
+            src="images\div.features-box-image (5).png"
+          />
+          <h6 class="text-md text-[#324361] font-bold">Graphic<br />Design</h6>
+          <p class="pb-4 text-[#4F547B] font-semibold">85 courses</p>
+        </div>
+      </div>
+      <div class="h-30 overflow-y-scroll">
+        <!-- Empty inner box taller than the container -->
+        <div class="h-20"></div>
+      </div>
+    </div>
+    <section class="py-16 bg-white">
+      <!-- Gradient Box -->
+      <div
+        class="relative max-w-6xl mx-auto rounded-3xl bg-gradient-to-r from-[#3A27CC] via-[#7A75F8] to-[#C12FCC] px-6 py-12 overflow-hidden"
+      >
+        <!-- Floating Avatars: Right -->
+        <img
+          src="images/Ellipse 166 (1).png"
+          alt=""
+          class="hidden md:block absolute w-16 h-16 rounded-full shadow-lg top-8 right-8"
+        />
+        <img
+          src="images/Ellipse 166.png"
+          alt=""
+          class="hidden md:block absolute w-16 h-16 rounded-full shadow-lg bottom-8 right-8"
+        />
+        <img
+          src="images/Ellipse 167 (2).png"
+          alt=""
+          class="hidden md:block absolute w-16 h-16 rounded-full shadow-lg bottom-32 right-[5rem] -translate-x-1/2"
+        />
+
+        <!-- Floating Avatars: Left -->
+        <img
+          src="images/Ellipse 167.png"
+          alt=""
+          class="hidden md:block absolute w-16 h-16 rounded-full shadow-lg top-8 left-8"
+        />
+        <img
+          src="images/Ellipse 168 (1).png"
+          alt=""
+          class="hidden md:block absolute w-16 h-16 rounded-full shadow-lg bottom-8 left-8"
+        />
+        <img
+          src="images/Ellipse 168.png"
+          alt=""
+          class="hidden md:block absolute w-16 h-16 rounded-full shadow-lg bottom-32 left-[5rem] translate-x-1/2"
+        />
+
+        <!-- Main Content -->
+        <div class="relative z-10 max-w-xl mx-auto text-center space-y-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-white">
+            Subscribe For Get Update<br />
+            Every New Courses
+          </h2>
+          <p class="text-white/80">
+            20k+ students daily learn with Eduvi. Subscribe for new courses.
+          </p>
+          <div
+            class="mt-6 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-0"
+          >
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="px-4 py-2 w-full sm:w-auto rounded-l-lg bg-white/30 text-white placeholder-white focus:outline-none"
+            />
+            <button class="px-6 py-2 bg-blue-800 text-white rounded-r-lg">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-white mt-[60px]">
+      <div class="relative w-full max-w-4xl mx-auto">
+        <img class="block w-full mb-20" src="images\Rectangle 8691.png" />
+        <img
+          class="absolute inset-0 m-auto w-[150px] h-[150px]"
+          src="images\Group 512857.png"
+        />
+      </div>
+    </div>
+    <div
+      class="h-auto mx-auto bg-gradient-to-t from-[#DBEDFF] to-white pt-20 pb-16"
+    >
+      <!-- Heading -->
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-bold text-blue-700">Testimonials</h2>
+        <p class="text-gray-600">What our students say about us</p>
+      </div>
+
+      <!-- Slides Container -->
+      <div class="relative w-full max-w-2xl mx-auto h-[300px]">
+        <!-- Slide 1 -->
+        <input
+          id="slide-1"
+          type="radio"
+          name="hero"
+          class="peer/s1 hidden"
+          checked
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center p-6 transition-opacity duration-700 opacity-0 peer-checked/s1:opacity-100"
+        >
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 w-full max-w-sm mx-auto text-center space-y-4"
+          >
+            <img
+              src="images/th (1) 4.png"
+              alt="profile1"
+              class="w-16 h-16 rounded-full mx-auto border-2 border-indigo-500"
+            />
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Such an amazing trainer and easily understood the entire syllabus.
+              The guidance was super and clear.
+            </p>
+            <div class="flex justify-center text-yellow-400 text-lg gap-1">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </div>
+          <label
+            for="slide-3"
+            class="absolute left-4 top-1/2 -translate-y-1/2 text-3xl text-gray-600 cursor-pointer z-30"
+          >
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+          </label>
+          <label
+            for="slide-2"
+            class="absolute right-4 top-1/2 -translate-y-1/2 text-3xl text-gray-600 cursor-pointer z-30"
+          >
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </label>
+        </div>
+
+        <!-- Slide 2 -->
+        <input id="slide-2" type="radio" name="hero" class="peer/s2 hidden" />
+        <div
+          class="absolute inset-0 flex items-center justify-center p-6 transition-opacity duration-700 opacity-0 peer-checked/s2:opacity-100"
+        >
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 w-full max-w-sm mx-auto text-center space-y-4"
+          >
+            <img
+              src="images/th (1) 4.png"
+              alt="profile2"
+              class="w-16 h-16 rounded-full mx-auto border-2 border-indigo-500"
+            />
+            <p class="text-gray-600 text-sm leading-relaxed">
+              The way of explaining was so simple yet effective. Highly
+              recommend the trainer for beginners!
+            </p>
+            <div class="flex justify-center text-yellow-400 text-lg gap-1">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+          </div>
+          <label
+            for="slide-1"
+            class="absolute left-4 top-1/2 -translate-y-1/2 text-3xl text-gray-600 cursor-pointer z-30"
+          >
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+          </label>
+          <label
+            for="slide-3"
+            class="absolute right-4 top-1/2 -translate-y-1/2 text-3xl text-gray-600 cursor-pointer z-30"
+          >
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </label>
+        </div>
+
+        <!-- Slide 3 -->
+        <input id="slide-3" type="radio" name="hero" class="peer/s3 hidden" />
+        <div
+          class="absolute inset-0 flex items-center justify-center p-6 transition-opacity duration-700 opacity-0 peer-checked/s3:opacity-100"
+        >
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 w-full max-w-sm mx-auto text-center space-y-4"
+          >
+            <img
+              src="images/th (1) 4.png"
+              alt="profile3"
+              class="w-16 h-16 rounded-full mx-auto border-2 border-indigo-500"
+            />
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Very patient and structured teaching approach. Cleared all doubts
+              with examples.
+            </p>
+            <div class="flex justify-center text-yellow-400 text-lg gap-1">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+          </div>
+          <label
+            for="slide-2"
+            class="absolute left-4 top-1/2 -translate-y-1/2 text-3xl text-gray-600 cursor-pointer z-30"
+          >
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+          </label>
+          <label
+            for="slide-1"
+            class="absolute right-4 top-1/2 -translate-y-1/2 text-3xl text-gray-600 cursor-pointer z-30"
+          >
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-gradient-to-r from-[#931BBD] to-[#477AE3] text-white py-10 px-6"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-sm text-black font-medium"
+      >
+        <!-- Connect -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">Connect</h2>
+          <img
+            src="images\Askmeidentity 2.png"
+            alt="Askme Identity Logo"
+            class="w-32 mb-4 opacity-50"
+          />
+          <p class="text-sm leading-relaxed">
+            Sri Jagannath Nivas, 8-1-164/345/A/1,<br />
+            Pragati Colony, Mailardevpally,<br />
+            Nawab Saheb Kunta, Hyd, 500005
+          </p>
+        </div>
+
+        <!-- Classes -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">Classes</h2>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Classroom courses</a></li>
+            <li>
+              <a href="#" class="hover:text-white">Virtual classroom courses</a>
+            </li>
+            <li><a href="#" class="hover:text-white">E-learning courses</a></li>
+            <li><a href="#" class="hover:text-white">Video Courses</a></li>
+            <li><a href="#" class="hover:text-white">Offline Courses</a></li>
+          </ul>
+        </div>
+
+        <!-- Community -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">Community</h2>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Learners</a></li>
+            <li><a href="#" class="hover:text-white">Partners</a></li>
+            <li><a href="#" class="hover:text-white">Developers</a></li>
+            <li><a href="#" class="hover:text-white">Transactions</a></li>
+            <li><a href="#" class="hover:text-white">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">Quick links</h2>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li>
+              <a href="#" class="hover:text-white">Professional Education</a>
+            </li>
+            <li><a href="#" class="hover:text-white">Courses</a></li>
+            <li><a href="#" class="hover:text-white">Admissions</a></li>
+            <li><a href="#" class="hover:text-white">Testimonial</a></li>
+            <li><a href="#" class="hover:text-white">Programs</a></li>
+          </ul>
+        </div>
+
+        <!-- More -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">More</h2>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Press</a></li>
+            <li><a href="#" class="hover:text-white">Investors</a></li>
+            <li><a href="#" class="hover:text-white">Terms</a></li>
+            <li><a href="#" class="hover:text-white">Privacy</a></li>
+            <li><a href="#" class="hover:text-white">Help</a></li>
+            <li><a href="#" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="bg-gradient-to-r from-purple-500 to-blue-500 py-6 text-center text-white"
+    >
+      <div class="flex justify-center space-x-6 mb-4">
+        <!-- Social Media Icons -->
+        <a
+          href="#"
+          class="bg-white rounded-full p-3 text-pink-500 hover:scale-110 transition"
+        >
+          <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
+        </a>
+        <a
+          href="#"
+          class="bg-white rounded-full p-3 text-green-500 hover:scale-110 transition"
+        >
+          <ion-icon name="logo-whatsapp" class="text-2xl"></ion-icon>
+        </a>
+        <a
+          href="#"
+          class="bg-white rounded-full p-3 text-blue-400 hover:scale-110 transition"
+        >
+          <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
+        </a>
+        <a
+          href="#"
+          class="bg-white rounded-full p-3 text-blue-600 hover:scale-110 transition"
+        >
+          <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
+        </a>
+        <a
+          href="#"
+          class="bg-white rounded-full p-3 text-red-600 hover:scale-110 transition"
+        >
+          <ion-icon name="logo-youtube" class="text-2xl"></ion-icon>
+        </a>
+      </div>
+      <p class="text-sm">Copyright © 2023 osmleidentity. All Rights Reserved</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

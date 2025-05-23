@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section
+      class="relative flex flex-col md:flex-row items-center justify-between px-10 py-20 overflow-hidden gap-10"
+    >
+      <!-- Left Text Column -->
+      <div class="z-10 max-w-xl w-full">
+        <p class="text-sm uppercase tracking-wide text-white/70 mb-2">
+          Successful coaches are visionaries
+        </p>
+        <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
+          Good <span class="text-blue-400">coaching</span> is<br />
+          good teaching &<br />
+          nothing else.
+        </h1>
+        <div class="flex flex-wrap gap-4 mb-6">
+          <button
+            class="border border-white px-4 py-2 rounded-md font-semibold hover:bg-white hover:text-purple-900 transition"
+          >
+            View Courses
+          </button>
+          <button class="font-semibold">Get Free Consultation</button>
+        </div>
+
+        <!-- Stylized Search Bar -->
+        <div
+          class="flex items-center bg-white rounded-full px-4 py-2 w-[400px] shadow-md"
+        >
+          <input
+            type="text"
+            placeholder="What do you want to learn today?"
+            class="flex-grow text-[#3C3A58] text-sm outline-none bg-transparent placeholder:text-[#3C3A58]"
+          />
+          <button
+            class="flex items-center gap-1 bg-gradient-to-r from-blue-800 to-purple-500 text-white px-4 py-1.5 rounded-full font-medium text-sm ml-2"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-4.35-4.35M16 10a6 6 0 11-12 0 6 6 0 0112 0z"
+              />
+            </svg>
+            Search
+          </button>
+        </div>
+      </div>
+
+      <!-- Quote Box -->
+      <div
+        class="absolute top-28 left-1/2 transform -translate-x-1/2 md:left-auto md:right-[370px] w-[260px] bg-white/10 backdrop-blur-md p-4 rounded-lg text-white text-sm z-0"
+      >
+        <p class="text-sm font-semibold mb-1">Shyam</p>
+        <p class="text-white/80 text-xs leading-relaxed">
+          In a coaching role, you ask the questions and rely more on your staff,
+          who become the experts, to provide the information.
+        </p>
+        <p class="text-xs mt-2">4.9</p>
+      </div>
+
+      <!-- Transparent Image -->
+      <div class="relative z-10">
+        <img
+          src="images/transparent-woman.png"
+          alt="Smiling woman"
+          class="max-h-[400px] w-auto object-contain"
+        />
+      </div>
+
+      <!-- Optional soft white blur background -->
+      <div
+        class="absolute -bottom-10 left-10 w-[250px] h-[250px] bg-white/10 rounded-full blur-3xl opacity-20 z-0"
+      ></div>
+    </section>
+  </body>
+</html>
